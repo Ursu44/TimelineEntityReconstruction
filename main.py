@@ -6,7 +6,7 @@ from kafka import KafkaConsumer, KafkaProducer
 
 from publicaIncident import publish_incident
 
-KAFKA_BOOTSTRAP = os.getenv("KAFKA_BOOTSTRAP_SERVERS", "localhost:29092")
+KAFKA_BOOTSTRAP = os.getenv("KAFKA_BOOTSTRAP_SERVERS", "kafka:9092")
 INPUT_TOPIC     = "ml_alerts"
 OUTPUT_TOPIC    = "correlated_incidents"
 WINDOW_SECONDS  = 600

@@ -1,16 +1,5 @@
 def find_root_cause(events: list) -> dict:
-    """
-    Identifică root cause prin traversare DFS.
 
-    Metodologie DFRWS TER-Model Q4:
-    - Sortare cronologică (Q2)
-    - Traversare DFS pentru primul eveniment anormal (Q4)
-    - Pivot point = primul eveniment cu certitudine ridicată
-    - Confidence propagat din calculate_confidence()
-
-    Referință: Carrier & Spafford (2004) — event-based
-    digital forensic investigation framework
-    """
     if not events:
         return {
             "event":       None,

@@ -12,7 +12,7 @@ MIN_EVENTS = 2
 last_incident: dict = {}
 last_peak:     dict = {}
 
-KAFKA_BOOTSTRAP = os.getenv("KAFKA_BOOTSTRAP_SERVERS", "localhost:29092")
+KAFKA_BOOTSTRAP = os.getenv("KAFKA_BOOTSTRAP_SERVERS", "kafka:9092")
 OUTPUT_TOPIC    = "correlated_incidents"
 
 producer = KafkaProducer(
